@@ -7,3 +7,4 @@ resources:
   - helmrelease2
   - helmrelease3
   - helmrelease4
+  - helmrelease5
