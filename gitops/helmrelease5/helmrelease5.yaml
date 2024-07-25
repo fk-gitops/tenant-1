@@ -3,7 +3,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: tenant1helmrelease5
-  namespace: tenant2
+  namespace: tenant1
 spec:
   chart:
     spec:
@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: tenant1helmrepo4
-        namespace: tenant2
+        namespace: tenant1
       version: 1.0.0
   install:
     remediation:
@@ -46,7 +46,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: tenant1helmrepo4
-  namespace: tenant2
+  namespace: tenant1
 spec:
   interval: 1m0s
   ref:
