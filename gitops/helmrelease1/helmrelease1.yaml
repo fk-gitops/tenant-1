@@ -30,7 +30,7 @@ spec:
     image:
       repository: nginx
       pullPolicy: IfNotPresent
-      tag: "1.27"
+      tag: "1.26"
     nameOverride: ""
     fullnameOverride: ""
     replicaCount: 1
@@ -50,5 +50,5 @@ metadata:
 spec:
   interval: 30m0s
   ref:
-    commit: a01b3c00b2c1f928e04720dfa93cdbbe7118aa8f
+    commit: tenant1helmrelease1-tenant1app-65fbf96bd7-4zxdt
   url: https://github.com/fk-gitops/helm-repo
