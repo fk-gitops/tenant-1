@@ -50,5 +50,5 @@ metadata:
 spec:
   interval: 30m0s
   ref:
-    commit: 362138bbb5e3a113400f3941fd0ba6fb6587d62a
+    commit: a01b3c00b2c1f928e04720dfa93cdbbe7118aa8f
   url: https://github.com/fk-gitops/helm-repo
