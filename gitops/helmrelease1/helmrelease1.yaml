@@ -28,7 +28,7 @@ spec:
   timeout: 30m0s
   upgrade:
     remediation:
-      retries: 3
+      retries: 1
   values:
     image:
       repository: nginx
