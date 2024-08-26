@@ -36,7 +36,7 @@ spec:
       tag: "1.26"
     nameOverride: ""
     fullnameOverride: ""
-    replicaCount: 5
+    replicaCount: 6
     serviceAccount:
       create: true
       annotations: {}
