@@ -50,5 +50,5 @@ metadata:
 spec:
   interval: 30m0s
   ref:
-    commit: tenant1helmrelease1-tenant1app-65fbf96bd7-4zxdt
+    commit: 4eacb5681a8b5197a9c50e452ef21de320010d01
   url: https://github.com/fk-gitops/helm-repo
