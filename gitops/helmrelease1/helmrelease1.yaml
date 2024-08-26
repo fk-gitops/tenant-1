@@ -13,7 +13,7 @@ spec:
         kind: GitRepository
         name: tenant1helmrepo
         namespace: tenant1
-      version: 1.0.0
+      version: 1.0.1
   install:
     remediation:
       retries: 3
