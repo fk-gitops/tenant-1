@@ -18,6 +18,11 @@ spec:
     remediation:
       retries: 3
   interval: 30m0s
+  test:
+    enable: true
+    ignoreFailures: true
+  driftDetection:
+    mode: enabled
   releaseName: tenant1helmrelease1
   targetNamespace: tenant1
   timeout: 30m0s
