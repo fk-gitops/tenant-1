@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: ./tenant1app
-      interval: 1m0s
+      interval: 30m0s
       sourceRef:
         kind: GitRepository
         name: tenant1helmrepo
@@ -17,10 +17,10 @@ spec:
   install:
     remediation:
       retries: 3
-  interval: 5m0s
+  interval: 30m0s
   releaseName: tenant1helmrelease1
   targetNamespace: tenant1
-  timeout: 2m0s
+  timeout: 30m0s
   upgrade:
     remediation:
       retries: 3
@@ -34,9 +34,9 @@ spec:
     nameOverride: ""
     fullnameOverride: ""
     replicaCount: 1
-    serviceAccount: 
-      create: true 
-      annotations: {} 
+    serviceAccount:
+      create: true
+      annotations: {}
       name: ""
     service:
       type: ClusterIP
@@ -48,7 +48,7 @@ metadata:
   name: tenant1helmrepo
   namespace: tenant1
 spec:
-  interval: 1m0s
+  interval: 30m0s
   ref:
-    branch: main
+    branch: tenant1
   url: https://github.com/fk-gitops/helm-repo
