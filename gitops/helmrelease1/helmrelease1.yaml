@@ -50,5 +50,5 @@ metadata:
 spec:
   interval: 30m0s
   ref:
-    branch: tenant1
+    commit: 362138bbb5e3a113400f3941fd0ba6fb6587d62a
   url: https://github.com/fk-gitops/helm-repo
