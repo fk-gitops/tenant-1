@@ -20,7 +20,7 @@ spec:
   interval: 30m0s
   test:
     enable: true
-    ignoreFailures: true
+    ignoreFailures: false
   driftDetection:
     mode: enabled
   releaseName: tenant1helmrelease1
@@ -36,7 +36,7 @@ spec:
       tag: "1.26"
     nameOverride: ""
     fullnameOverride: ""
-    replicaCount: 6
+    replicaCount: 4
     serviceAccount:
       create: true
       annotations: {}
@@ -53,5 +53,5 @@ metadata:
 spec:
   interval: 30m0s
   ref:
-    commit: fb4f1a60fc23896522316435fcd1be79309d9c05
+    commit: 8fff780b5ee16260523a411160bec8ce458d2aaa
   url: https://github.com/fk-gitops/helm-repo
