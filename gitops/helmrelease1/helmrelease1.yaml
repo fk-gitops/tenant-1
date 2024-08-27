@@ -20,7 +20,7 @@ spec:
   interval: 30m0s
   test:
     enable: true
-    ignoreFailures: true
+    ignoreFailures: false
   driftDetection:
     mode: enabled
   releaseName: tenant1helmrelease1
