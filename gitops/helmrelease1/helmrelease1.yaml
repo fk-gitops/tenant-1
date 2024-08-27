@@ -13,14 +13,14 @@ spec:
         kind: GitRepository
         name: tenant1helmrepo
         namespace: tenant1
-      version: 1.0.4
+      version: 1.0.5
   install:
     remediation:
       retries: 3
   interval: 30m0s
   test:
     enable: true
-    ignoreFailures: false
+    ignoreFailures: true
   driftDetection:
     mode: enabled
   releaseName: tenant1helmrelease1
@@ -53,5 +53,5 @@ metadata:
 spec:
   interval: 30m0s
   ref:
-    commit: 8fff780b5ee16260523a411160bec8ce458d2aaa
+    commit: 69a78bfe3845dfc675e6595ffbe2e217ef4c1e7e
   url: https://github.com/fk-gitops/helm-repo
